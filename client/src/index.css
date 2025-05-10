@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .cta-button {
+    @apply transition-all duration-300 hover:shadow-lg;
+  }
+} 
