@@ -4,8 +4,9 @@ const cors = require('cors');
 const app = express();
 
 // Allow CORS from your frontend domain
+const frontendUrl = process.env.FRONTEND_URL || 'https://your-domain.com';
 app.use(cors({
-  origin: 'https://your-domain.com'
+  origin: frontendUrl
 }));
 app.use(express.json());
 
