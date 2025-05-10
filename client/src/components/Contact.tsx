@@ -25,7 +25,7 @@ export default function Contact() {
     setSubmitMessage(null);
 
     try {
-      const response = await fetch('https://your-backend-domain.com/api/contact', {
+      const response = await fetch('https://web-production-34c4.up.railway.app/api/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
